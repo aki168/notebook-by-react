@@ -1,8 +1,8 @@
 import React from "react"
 import Sidebar from "./components/Sidebar"
 import Editor from "./components/Editor"
-// import { data } from "./data"
 import Split from "react-split"
+// 隨機生成id
 import {nanoid} from "nanoid"
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
     function createNewNote() {
         const newNote = {
             id: nanoid(),
-            body: "# Type your markdown note's title here"
+            body: "# 標題主旨"
         }
         setNotes(prevNotes => [newNote, ...prevNotes])
         setCurrentNoteId(newNote.id)
@@ -42,8 +42,8 @@ export default function App() {
         })
     }
     
-    /**
-     * 當該note的id與點擊到的id相同時，filter產生新陣列（判斷非刪除的item）
+    /*
+    當該note的id與點擊到的id相同時，filter產生新陣列（判斷非刪除的item）
      */
     
     function deleteNote(event, noteId) {
@@ -87,13 +87,14 @@ export default function App() {
                 }
             </Split>
             :
+            // 當沒有任何note時，顯示該畫面
             <div className="no-notes">
-                <h1>You have no notes</h1>
+                <h1>目前尚未建立筆記內容</h1>
                 <button 
                     className="first-note" 
                     onClick={createNewNote}
                 >
-                    Create one now
+                    建立筆記！
                 </button>
             </div>
             

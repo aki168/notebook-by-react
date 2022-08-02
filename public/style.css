@@ -40,11 +40,12 @@ button:focus {
 
 .sidebar--header > h3 {
     font-size: 1.75rem;
+    color: #4A4E74;
 }
 
 .new-note {
     cursor: pointer;
-    background-color: #4A4E74;
+    background-color: #1da1f2;
     border: none;
     color: white;
     border-radius: 3px;
@@ -54,7 +55,7 @@ button:focus {
 
 .first-note {
     cursor: pointer;
-    background-color: #4A4E74;
+    background-color: #1da1f2;
     border: none;
     color: white;
     border-radius: 3px;
@@ -102,7 +103,7 @@ button:focus {
 }
 
 .selected-note {
-    background-color: #4A4E74;
+    background-color: #1da1f2;
 }
 
 .selected-note .text-snippet {
@@ -137,6 +138,7 @@ button:focus {
     justify-content: center;
     align-items: center;
     background-color: whitesmoke;
+    color: #4A4E74;
 }
 
 .delete-btn {
@@ -153,7 +155,8 @@ button:focus {
     cursor: pointer;
 }
 
- .gg-trash {
+.gg-trash {
+    color: #eee;
     box-sizing: border-box;
     position: relative;
     display: block;
