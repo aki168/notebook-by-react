@@ -1,4 +1,4 @@
-[EMO查看 | 引用筆記本套件/存入LocalStorage](https://aki168.github.io/notebook-by-react/)
+[DEMO查看 | 引用筆記本套件/存入LocalStorage](https://aki168.github.io/notebook-by-react/)
 
 # Getting Started with Create React App
 
